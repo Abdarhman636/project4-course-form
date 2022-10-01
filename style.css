@@ -1,0 +1,124 @@
+
+html {
+     scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+     box-sizing: border-box;
+     margin: 0;
+   }
+
+   body, h1, h2, h3, h4, h5, h6, p, ul, li {
+        padding: 0;
+        margin: 0;
+   }
+
+   ol, ul {
+	list-style: none;
+}
+
+button {
+     border: none;
+}
+
+/* ====================================================== */
+
+section {
+     background: url(assets/Background.png);
+     background-repeat: no-repeat;
+    background-size: cover;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.container {
+     /* max-width: 70; */
+     width: 800px;
+     height: 500px;
+     /* max-height: 700px; */
+     background: white;
+     display: flex;
+     border: solid 1px #bebfbf;
+     border-radius: 8px;
+}
+
+.phone-img, .form {
+     flex: 1;
+}
+
+.phone-img {
+     text-align: center;
+     background-repeat: no-repeat;
+    background-image: url(assets/iPhone\ Mockup.png);
+    background-size: cover;
+    background-color: #013243;
+    background-position: center bottom;
+}
+
+.phone-img h1 {
+     color: white;
+     padding-top: 40px;
+     font-size: 30px;
+}
+
+.phone-img p {
+     color: #79b1c5;
+     padding-top: 10px;
+     font-size: 17px;
+}
+ 
+.phone-img img {
+     width: 100%;
+}
+
+form {
+     display: flex;
+     padding: 40px;
+     flex-direction: column;
+}
+
+form h1 {     
+     font-size: 30px;
+     
+}
+
+form label {
+     margin-top: 15px;
+     font-size: 17px;
+}
+
+form input {
+     padding: 18px 10px;
+     border: solid 1px #bebfbf;
+     border-radius: 8px;
+     margin-top: 15px;
+}
+
+form button {
+     background-color: #013243;
+     padding: 18px 25px;
+     color: white;
+     border-radius: 8px;
+     font-weight: bold;
+     margin-top: 25px;
+}
+
+.checkbox-div label span {
+     color: #013243;
+     text-decoration: underline;
+     font-weight: bold;
+}
+
+@media only screen and (max-width: 800px) {
+     .container {
+          flex-direction: column;
+          width: 100%;
+          height: 100%;
+     }
+
+     .phone-img {
+         background-image: none;
+     }
+   }
